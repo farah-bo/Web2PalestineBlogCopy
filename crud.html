@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="vendor\twbs\bootstrap\dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        .btn a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .btn a:hover {
+            text-decoration: none;
+        }
+        body{
+        
+            background-image: url("backg.jpg") ;
+            background-size: cover;
+            background-attachment: fixed;
+            background-attachment: fixed;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            display: flex;*
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins' ,sans-serif;
+        }
+        .menu{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+            position: relative;
+            padding: 0 5%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        nav{
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 20px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav .logo{
+            width: 80px;
+        }
+        nav ul li{
+            list-style: none;
+            display: inline-block;
+            margin-left: 40px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        
+   <nav>
+       <img src="icon.jpg" class="logo"><ul>
+           <li><a href="home.html">Disconnect</a></li>
+       </ul></nav>
+    <button id="btn1" name="btn1" class="btn btn-primary"><a href="crudAjoutUser.php" class="btn">Add a user</a></button><br>
+    <button id="btn2" name="btn2" class="btn btn-danger"><a href="crudDeleteUser.php" class="btn">Delete a user</a></button><br>
+    <button id="btn3" name="btn3" class="btn btn-primary"><a href="crudUpdateUser1.php" class="btn">Modify a user's name</a></button> <br>
+    <button id="btn4" name="btn4" class="btn btn-primary"><a href="crudUserInfo.php" class="btn">See user's information</a></button>
+    <button id="btn5" name="btn5" class="btn btn-danger"><a href="crudDeleteArticle.php" class="btn">Delete an Article</a></button>
+</body>
+</html>

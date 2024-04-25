@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heading</title>
+<link rel="stylesheet" href="articles.css">
+<style>
+    /* Additional CSS styles for the container and image */
+    .heading-container {
+        text-align: center;
+        padding: 20px;
+        margin: 20px auto;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 80%;
+        max-width: 600px;
+    }
+
+    .heading-container img {
+        width: 500px; /* Adjust image width as needed */
+        margin-bottom: 20px;
+    }
+
+    nav{
+	width: 90%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px 8%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+nav .logo{
+	width: 80px;
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 40px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: black;
+	font-size: 17px;
+}
+    
+</style>
+</head>
+<body>
+    
+        <nav>
+            <img src="icone.png" class="logo" onclick="window.location.href='home.html'"><ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="inscription.php">Sign up</a></li>
+                <li><a href="connexion.php">Login</a></li>
+                <li><a href="#">Latest</a></li>
+            </ul></nav>
+    
+    <div class="heading-container" onclick="window.location.href='article1.html'">
+        
+        <h1>‘Organized State Terrorism’ – OIC Says Gaza Mass Grave Discovery Requires Investigation</h1>
+        <img src="art1.jpg" alt="Image">
+    </div>
+    <div class="heading-container" onclick="window.location.href='article2.html'">
+        
+        <h1>‘+ 200 Days of Genocide – Gaza’s Shocking Stats on Massacres, Dead, Missing, Injured,..</h1>
+        <img src="art2.jpg" alt="Image">
+    </div>
+</body>
+</html>
